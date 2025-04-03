@@ -28,11 +28,21 @@ h3{
 
 .long-text {
     display: inline;
-  }
+    
+}
   
-  .short-text {
+.short-text {
     display: none;
-  }
+}
+
+
+.space-services {
+    margin: 0.5rem;
+    border-radius: 0.1rem;
+    background: rgba(255, 255, 255, 0.053);
+    transition: all 0.3s ease;
+}
+
 
 /** loader */
 .preloader-background {
@@ -52,7 +62,7 @@ h3{
 
 /** menu */
 nav, .page-footer{
-    background: #0602e7;
+    background: #e42f02e0;
 }
 
 nav .brand-logo, .page-footer h2{
@@ -132,19 +142,21 @@ font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .background-2 .text-sideflip{
+        .background-2 .long-text{
             text-align: justify;
-            margin: 0 60px 0 60px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            
         }
 
+        
         .background-2 .see-more{
-            background: #1546db;
+            margin-top: 1rem;
+            background: #e42f02e0;
             color: var(--primary-font-color1);
         }
 
         .background-2 .see-more:hover{
-            background: #0312e5ca;
+            background: #e42f02a9;
 
         }
 
@@ -435,21 +447,27 @@ font-weight: bold;
 
 
 
-@media (max-width: 880px){
+@media (max-width: 995px){
     h3{
         font-size: .92rem;
         font-weight: bold;
     }
-    .see-more, .fa-chevron-down{
+    .fa-chevron-down{
         display:none;
     }
     
+    
     .long-text {
         display: none;
-      }
+    }
     
-      .short-text {
+    .short-text  {
         display: inline;
-      }
+    }
+
+    .background-2 .short-text{
+        text-align: right;
+        font-size: 1.2rem;
+    }
 
 }
